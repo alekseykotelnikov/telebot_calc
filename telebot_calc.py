@@ -53,7 +53,7 @@ def callback_func(query):
         if value != '':
             value = value[:len(value)-1]
     elif data == '=':
-        value = str({eval(value)})
+        value = str(eval(value))
     else:
         value += data
     if value != old_value:
